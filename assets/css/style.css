@@ -1,0 +1,17 @@
+/* background */
+
+
+/* main container */
+
+#container {
+    background-color: invisible;
+    color: white;
+    margin: 50px;
+    height: 650px;
+    padding: 30px;
+    text-align: center;
+}
+
+#timer {
+    color: white;
+}

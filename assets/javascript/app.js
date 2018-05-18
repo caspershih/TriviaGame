@@ -1,5 +1,5 @@
-// define varibles here //
+// define varibles here
 
-// timer goes here //
+// timer goes here
 
-// make the flash cards responsive //
+// make the flash cards responsive
