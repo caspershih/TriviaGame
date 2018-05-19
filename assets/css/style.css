@@ -2,7 +2,6 @@
 
 
 /* main container */
-
 #container {
     background-color: invisible;
     color: white;
@@ -12,6 +11,19 @@
     text-align: center;
 }
 
+/* timer */
 #timer {
     color: white;
+    text-align: center;
+    margin: 50px;
+    height: 100px;
+    width: 440px;
+}
+
+/* slide show */
+#slideShow {
+    text-align: center;
+    height: 400px;
+    width: 440px;
+    margin: 50px;
 }
