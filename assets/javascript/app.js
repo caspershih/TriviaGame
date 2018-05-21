@@ -1,3 +1,10 @@
+// defining varibles
+
+var questions = ["Which of the following is not an insect?","Which of the following is not"]
+var correctAnswer = 0;
+var incorrectAnswer = 0;
+var timesUp = 0;
+
 // timer
 var timer;
 
@@ -33,3 +40,5 @@ function showSlides(n) {
 }
 
 // make the flash cards responsive
+
+// 
