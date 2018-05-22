@@ -39,6 +39,8 @@ function showSlides(n) {
     dots[slide-1].className += "active";
 }
 
-// make the flash cards responsive
+// define all the winning and losing here
+
+
 
 // 
