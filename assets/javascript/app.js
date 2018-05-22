@@ -38,7 +38,3 @@ function showSlides(n) {
     slides[slide-1].style.display = "block";
     dots[slide-1].className += "active";
 }
-
-// make the flash cards responsive
-
-// 
