@@ -36,14 +36,28 @@ const game = {
 
     getQuestions: function() {
         
+        setInterval(game.countDown, 1500);
+
+        panel.html("<h1>" + question[this.currentQuestion].question + "</h2>");
+
+        for (var i = 0; i < question[this.currentQuestion].answers.length; i ++) {
+            
+            panel.append("<button class='answer-button' id='button' data-name='" + questions[this.currentQuestion].answers[i]
+      + "'>" + questions[this.currentQuestion].answers[i] + "</button>");
+        }
+    },
+    
+    nextQuestion: function() {
+        game.counter = countNumber;
+        $("#Counter-Number").text(game.counter);
+        game.currentQuestion++;
+        game.getQuestions();
+    },
+
+    timeUp: function() {
+
         clearInterval(timer);
 
-
+        
     }
-<<<<<<< HEAD
-    slides[slide-1].style.display = "block";
-    dots[slide-1].className += "active";
 }
-=======
-}
->>>>>>> 66124c57c7e4f0ad49c4e330f916e838709ba66d
