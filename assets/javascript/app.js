@@ -38,6 +38,6 @@ const game = {
         
         clearInterval(timer);
 
-
+        $("#counter-number")
     }
 }
