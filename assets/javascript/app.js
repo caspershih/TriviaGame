@@ -1,40 +1,49 @@
 // defining varibles
-
-var questions = ["Which of the following is not an insect?","Which of the following is not"]
-var correctAnswer = 0;
-var incorrectAnswer = 0;
-var timesUp = 0;
-
-// timer
-var timer;
+const timer;
+const questionArea = $("#slides")
+const countNumber = 10;
 
 
-
-
-// slideshow
-var slides = 1;
-showSlides(slide);
-
-function plusSlides(n) {
-    showSlides(slides +=n);
+// Make an array for questions
+const questionArray = [ {
+    question: "Which of the following is not an insect?",
+    answers: ["Ant", "Spider"],
+    correctedAnswer: ["Spider"]
+}, {
+    question: "",
+    answers: ["", ""],
+    correctedAnswer: [""]
 }
+];
 
-function currentslide(n) {
-    showslides(slides = n);
-}
+//
+const game = {
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slides = 1}
-    if (n < 1) {slides = slides.length}
-    for (i = 0; i < slides.length; i++){
-        slides[i].style.display = "none";
+    questions: questions,
+    currentQuestion: 0,
+    counter: countNumber,
+    correct: 0,
+    incorrect: 0,
+
+    countDown: function() {
+        game.counter--;
+        $("#counter-number").text(game.counter);
+        if (game.counter === 0) {
+            console.log("TIMES UP!");
+            game.timeUp();
+        }
+    },
+
+    getQuestions: function() {
+        
+        clearInterval(timer);
+
+
     }
-    for (i = 0; i < dots.length; i++){
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
+<<<<<<< HEAD
     slides[slide-1].style.display = "block";
     dots[slide-1].className += "active";
 }
+=======
+}
+>>>>>>> 66124c57c7e4f0ad49c4e330f916e838709ba66d
