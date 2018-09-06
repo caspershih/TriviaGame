@@ -36,8 +36,29 @@ const game = {
 
     getQuestions: function() {
         
-        clearInterval(timer);
+        setInterval(game.countDown, 1500);
+
+        panel.html("<h1>" + question[this.currentQuestion].question + "</h2>");
+
+        for (var i = 0; i < question[this.currentQuestion].answers.length; i ++) {
+            
+            panel.append("<button class='answer-button' id='button' data-name='" + questions[this.currentQuestion].answers[i]
+      + "'>" + questions[this.currentQuestion].answers[i] + "</button>");
+        }
+    },
+    
+    nextQuestion: function() {
+        game.counter = countNumber;
+        $("#Counter-Number").text(game.counter);
+        game.currentQuestion++;
+        game.getQuestions();
+    },
+
+    timeUp: function() {
 
         $("#counter-number")
+        clearInterval(timer);
+
+        
     }
-}
+};
